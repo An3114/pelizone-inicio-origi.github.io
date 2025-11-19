@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a Pelizone</title>
+    <style>
+        /* Fondo con colores vivos y suaves */
+        body {
+            background: linear-gradient(135deg, #5B2C6F, #2874A6, #D35400);
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Contenedor principal */
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            padding: 35px 25px;
+            max-width: 600px;
+            width: 90%;
+            backdrop-filter: blur(8px);
+        }
+
+        h1 {
+            font-size: 2.3em;
+            margin-bottom: 15px;
+            color: #FFD700; /* Amarillo cálido */
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+        }
+
+        p {
+            font-size: 1.1em;
+            margin: 10px 0;
+            line-height: 1.5em;
+        }
+
+        /* Botones */
+        button {
+            border: none;
+            color: white;
+            padding: 14px 30px;
+            font-size: 1.1em;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+            margin: 12px 8px 0 8px;
+        }
+
+        .btn-principal {
+            background-color: #E74C3C; /* Rojo vivo */
+        }
+
+        .btn-principal:hover {
+            background-color: #C0392B;
+            transform: scale(1.05);
+        }
+
+        .btn-whatsapp {
+            background-color: #1ABC9C; /* Verde vivo */
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #16A085;
+            transform: scale(1.05);
+        }
+
+        /* Cuadro de seguridad */
+        .seguridad {
+            margin-top: 25px;
+            font-size: 0.95em;
+            color: #f1f1f1;
+            background: rgba(0, 0, 0, 0.35);
+            padding: 15px;
+            border-radius: 12px;
+            line-height: 1.6em;
+        }
+
+        .seguridad strong {
+            color: #00FFA3;
+        }
+
+        /* Pie de página */
+        footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            opacity: 0.85;
+        }
+
+        /* Versión móvil */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.9em;
+            }
+            p {
+                font-size: 1em;
+            }
+            button {
+                width: 100%;
+                padding: 12px;
+                margin: 10px 0;
+            }
+            .container {
+                padding: 30px 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎬 Bienvenido a <strong>Pelizone</strong></h1>
+        <p><strong>Horario de atención:</strong> 1:00 p.m. a 8:00 p.m.</p>
+        <p>Puedes dejar tu solicitud en cualquier momento. 💬</p>
+        <p>Ofrecemos servicios <strong>personalizados</strong> con un equipo comprometido contigo. 🚀</p>
+
+        <button class="btn-principal" onclick="window.location.href='https://an3114.github.io/pelizone-maketin.github.io/'">
+            🎟️ Ver plataformas y combos
+        </button>
+
+        <button class="btn-whatsapp" onclick="window.location.href='https://wa.me/573206034019?text=Hola,%20quiero%20hablar%20con%20un%20vendedor%20de%20Pelizone'">
+            💬 Charlar directamente con vendedor
+        </button>
+
+        <div class="seguridad">
+            🔒 <strong>Tu seguridad es primero:</strong><br>
+            Ninguno de nuestros vendedores te pedirá datos personales.<br>
+            Estás <strong>seguro con nosotros</strong>.
+        </div>
+    </div>
+
+    <footer>
+        © 2025 Pelizone. Todos los derechos reservados.
+    </footer>
+</body>
+</html>
